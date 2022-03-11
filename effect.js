@@ -132,7 +132,7 @@ $('document').ready(function(){
 	});
 
 	$('#light_candle').click(function(){
-		$('.fuego').fadeIn('slow');
+		$('.fuego').fadeIn(3000);
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
@@ -178,8 +178,8 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i== $("#message_row").children("p").length){
-				$("p:nth-child("+i+")").delay(4000).fadeOut('slow').promise().done(function () {
-					$('.cake').delay(400).fadeIn('slow');
+				$("p:nth-child("+i+")").delay(6000).fadeOut('slow').promise().done(function () {
+					$('.cake').delay(1000).fadeIn('slow');
 				});
 				
 			}
