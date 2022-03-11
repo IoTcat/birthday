@@ -178,8 +178,8 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i== $("#message_row").children("p").length){
-				$("p:nth-child("+i+")").delay(6000).fadeOut('slow').promise().done(function () {
-					$('.cake').delay(1000).fadeIn('slow');
+				$("p:nth-child("+i+")").delay(6000).fadeOut(3000).promise().done(function () {
+					$('.cake').delay(500).fadeIn(3000);
 				});
 				
 			}
