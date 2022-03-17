@@ -176,7 +176,7 @@ $('document').ready(function(){
 
 			$("p:nth-child("+i+")").fadeOut('slow').delay(950).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1300);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1000+50*($("p:nth-child("+i+")").html().length));
 			if(i== $("#message_row").children("p").length){
 				$("p:nth-child("+i+")").delay(6000).fadeOut(3000).promise().done(function () {
 					$('.cake').delay(500).fadeIn(3000);
